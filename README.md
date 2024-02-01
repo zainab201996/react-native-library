@@ -7,7 +7,11 @@ The application consists of two screens
 2. Search Screen: The search screen displays top 10 records from Open API library matching the Search Key user enters.
 
 There are navigation buttons to move to and fro between two Screens.
+
+
 **How to RUN**
+
+
 The application uses EXPO CLI for React Native cross-platform development. To start the application perform the following steps:
 
 1. npm install
