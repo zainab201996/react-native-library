@@ -4,7 +4,6 @@ import Icon from "react-native-vector-icons/FontAwesome";
 
 const Header = ({ navigation }) => {
   const handleBackButton = () => {
-    console.log("hello");
     navigation.navigate("Search");
   };
   return (

@@ -13,7 +13,6 @@ import { getBooksByAuthor, getBooksByTitle } from "../Api/bookApi.js";
 
 const Search = ({ navigation }) => {
   const handleButtonPress = () => {
-    console.log("Back pressed");
     navigation.navigate("Book");
   };
 
@@ -27,7 +26,6 @@ const Search = ({ navigation }) => {
           const list = [];
           let id = 1;
           const author_match_data = await getBooksByAuthor(searchText, 5);
-          console.log(author_match_data.length);
           if (author_match_data && author_match_data.length != 0) {
             author_match_data.map((data) => {
               list.push({
@@ -39,7 +37,6 @@ const Search = ({ navigation }) => {
           }
 
           const title_match_data = await getBooksByTitle(searchText, 5);
-          console.log(title_match_data.length);
           if (title_match_data && title_match_data.length != 0) {
             title_match_data.map((data) => {
               list.push({
